@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery.js"></script>
+<script src="js/redimension.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hall.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Mysterion : jeux mystere</title>
+</head>
+ 
+ <body onload="init()">
+    <button class="start" onclick ="Main()"> GO</button> 
+   <p id= 'rules'>appuyez sur Go pour commencer le jeu</p>
+    <h3 id= 'titre'></h3>
+    <p id ="name"></p>
+    <p id ="game"></p>
+    <p id ="mets_ton_nom" >  </p>
+  	
+    <p id ="input1">
+        <input   type="text" value="" id="mon_super_nom"/></input>
+    </p>
+    
+    <p id ="mets_ton_chiffre"> </p>
+  	
+    <p id ="input2">
+        <input  id="start"/>  
+	  </p>
+
+    <button class="tictoc" id ="montre"></button> 
+    <h2 id ='eval_result'></h2>
+    <p id="time"></p>
+    <p id="score"></p>
+    <h5 id="tapositDansleHall"></h5>
+    <p id="legendfame"></p>   
+	  <button id="onFame" onclick="fame()"></button>   
+	   <p> <a href="http://juliegosselin.ovh/">RETOUR ACCUEIL</a>?</p>
+    <br/>
+    <br/>
+    
+  <table id="fameTable" border="1">
+  <tr border="8">
+  <td >CLASSEMENT</td><td id="count0" border="1"></td><td p id="count1" border="1"></td> 
+  <td id="count2"></td><td id="count3"></td><td id="count4"></td><td id="count5"></td>  
+  <td id="count6"></p></td><td id="count7"></td><td id="count8"></td><td id="count9"></td>
+</tr>
+ <tr>  
+  <td id="fame_names"></td><td id="name0"></td><td id="name1"></td><td id="name2"></td> 
+  <td id="name3"></td><td id="name4"></td><td id="name5"></td><td id="name6"></td>
+  <td id="name7"></td><td id="name8"></td><td id="name9"></td> 
+ </tr>
+<tr>
+  <td id="fame_score"></td><td id="score0"></td><td id="score1"></td><td id="score2"></td>
+  <td id="score3"></td><td id="score4"></td><td id="score5"></td><td id="score6"></td>
+  <td id="score7"></td><td id="score8"></td><td id="score9"></td>
+  </tr>
+<tr>    
+  <td id="fame_time"></td><td id="temps0"></td><td id="temps1"></td><td id="temps2"></td>
+  <td id="temps3"></td><td id="temps4"></td><td id="temps5"></td><td id="temps6"></td>
+ 	<td id="temps7"></td><td id="temps8"></td><td id="temps9"></td>  	
+</tr>
+</table>   
+
+  </body>
+</html>
